@@ -2,31 +2,27 @@
 <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/colorPrimaryDark"
         tools:context=".MainPageOne">
 
-    <LinearLayout
-            android:orientation="horizontal"
+
+    <ImageView
+            android:id="@+id/img_pa"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        <ImageView
-                android:id="@+id/ImagePageOne"
-                android:background="@drawable/ic_launcher_foreground"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        <TextView
-                android:id="@+id/textviewPgage1"
-                android:textSize="30sp"
-                android:gravity="center"
-                android:text="jklfsdkljfsdjklsdfkjdfklj"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"/>
 
-
-    </LinearLayout>
+    <!--<TextView-->
+    <!--android:id="@+id/textviewPgage1"-->
+    <!--android:textSize="30sp"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:text="test1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"/>-->
 
     <android.support.design.widget.BottomNavigationView
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -34,12 +30,17 @@
             android:id="@+id/navigation1"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            app:itemIconTint="@color/White"
-            app:itemTextColor="@color/colorPrimary"
-            android:background="@color/colorPrimaryDark"
+            app:itemIconTint="@color/back"
+            app:itemTextColor="@color/back"
+            android:background="@color/White"
             android:layout_gravity="start"
             android:layout_alignParentBottom="true"
-            app:menu="@menu/main_menu" />
+            app:menu="@menu/main_menu"/>
+
+    <!--<android.support.v7.widget.RecyclerView -->
+    <!--android:id="@+id/listview1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>-->
 
 
 </RelativeLayout>
